@@ -12,18 +12,24 @@ public class RegisterTask implements Task {
 
     RegisterDataModels registerDataModels;
 
+    public RegisterTask(RegisterDataModels registerDataModels) {
+        this.registerDataModels = registerDataModels;
+    }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(RegisterPage.BTN_HAMBURGUER));
-        actor.attemptsTo(Click.on(RegisterPage.BTN_MICUENTA));
-        actor.attemptsTo(Click.on(RegisterPage.REGISTER));
+        actor.attemptsTo(Click.on(RegisterPage.BTN_REGSITER));
         actor.attemptsTo(Enter.theValue(registerDataModels.getNameuser()).into(RegisterPage.TXT_NAME));
         actor.attemptsTo(Enter.theValue(registerDataModels.getEmaiuser()).into(RegisterPage.TXT_EMAIL));
         actor.attemptsTo(Enter.theValue(registerDataModels.getPassworduser()).into(RegisterPage.TXT_PASSWORD));
         actor.attemptsTo(Click.on(RegisterPage.CBX_INFORMATION));
         actor.attemptsTo(Click.on(RegisterPage.CBX_AUTORITATION));
         actor.attemptsTo(Click.on(RegisterPage.BTN_REGISTER));
-
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static RegisterTask inthePage(RegisterDataModels registerDataModels){
