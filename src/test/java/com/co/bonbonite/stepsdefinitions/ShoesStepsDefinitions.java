@@ -2,6 +2,7 @@ package com.co.bonbonite.stepsdefinitions;
 
 import com.co.bonbonite.models.Credentials;
 import com.co.bonbonite.questions.VerifyBuy;
+import com.co.bonbonite.tasks.ShoesAgregateTasks;
 import com.co.bonbonite.tasks.ShoesBuyTasks;
 import com.co.bonbonite.tasks.ShoesTasks;
 import cucumber.api.java.en.Given;
@@ -16,20 +17,12 @@ import java.util.List;
 
 public class ShoesStepsDefinitions {
     @Given("^he user enter the website with his credentials$")
-    public void heUserEnterTheWebsiteWithHisCredentials(List<Credentials>credentials) {
+    public void heUserEnterTheWebsiteWithHisCredentials() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.bon-bonite.com/"));
-        Credentials credentials1;
-        credentials1=credentials.get(0);
-        OnStage.theActorInTheSpotlight().wasAbleTo(ShoesTasks.shoesTasks(credentials1));
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
     }
 
-    @When("^the user select the nmodule bolsos-bomboneras$")
+    @When("^the user select the module bolsos-bomboneras$")
     public void theUserSelectTheNmoduleBolsosBomboneras() {
     OnStage.theActorInTheSpotlight().wasAbleTo(ShoesBuyTasks.shoesBuyTasks());
     }
@@ -42,5 +35,15 @@ public class ShoesStepsDefinitions {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+    //----------------------------------------------------------------------------------------------------------------------------------
+    @When("^the user select the module bolsos-bomboneras and select")
+    public void theUserSelectTheModuleBolsosBombonerasAndSelect() {
+    OnStage.theActorInTheSpotlight().wasAbleTo(ShoesAgregateTasks.shoesAgregateTasks());
+    }
+
+    @Then("^the user will see the product in the module")
+    public void theUserWillSeeTheProductInTheModule() {
+
     }
 }

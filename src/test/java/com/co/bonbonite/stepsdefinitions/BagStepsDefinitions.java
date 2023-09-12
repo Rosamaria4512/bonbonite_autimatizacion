@@ -9,14 +9,15 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import org.hamcrest.Matchers;
 
 public class BagStepsDefinitions {
-    @When("^the user select the module bolsos-bomboneras and select a product$")
-    public void theUserSelectTheModuleBolsosBombonerasAndSelectAProduct() {
+
+    @When("^The user select a product in the Wallets module$")
+    public void TheUserSelectAProductInTheWalletsModule() {
         OnStage.theActorInTheSpotlight().wasAbleTo(BagsBuy.bagsBuy());
     }
 
     @Then("^the user will buy a Bag$")
     public void theUserWillBuyABag() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBuy.verifyBuy(), Matchers.is("PRODUCTO")));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBuy.verifyBuy(),Matchers.is("PRODUCTO")));
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
