@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Register" skipped="0" tests="1" time="63.63" timestamp="2023-09-12 10:00:09"><testcase name="register correctly"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Register" skipped="0" tests="1" time="28.03" timestamp="2023-09-12 11:41:03"><testcase name="register correctly"><error type="java.lang.NullPointerException"/><system-err>null&#13;
 com.co.bonbonite.tasks.RegisterTask.performAs(RegisterTask.java:20)&#13;
 com.co.bonbonite.stepsdefinitions.RegisterStepDefiniton.heUserFillsOutDataToBeAbleToRegisterOnThePage(RegisterStepDefiniton.java:42)&#13;
 cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
