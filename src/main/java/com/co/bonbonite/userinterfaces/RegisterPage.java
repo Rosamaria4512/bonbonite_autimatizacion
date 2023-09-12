@@ -1,5 +1,6 @@
 package com.co.bonbonite.userinterfaces;
 
+import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class RegisterPage {
@@ -17,6 +18,7 @@ public class RegisterPage {
             .locatedBy("//input[@id='reg_email']");
     public static final Target TXT_PASSWORD = Target.the("click en el logo")
             .locatedBy("//input[@id='reg_password']");
+
     public static final Target CBX_INFORMATION = Target.the("click en el logo")
             .locatedBy("(//input[@type='checkbox'])[2]");
     public static final Target CBX_AUTORITATION = Target.the("click en el logo")
