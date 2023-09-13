@@ -1,6 +1,7 @@
 package com.co.bonbonite.stepsdefinitions;
 
 import com.co.bonbonite.models.Credentials;
+import com.co.bonbonite.questions.VerifyBag;
 import com.co.bonbonite.questions.VerifyBuy;
 import com.co.bonbonite.tasks.ShoesAgregateTasks;
 import com.co.bonbonite.tasks.ShoesBuyTasks;
@@ -22,8 +23,8 @@ public class ShoesStepsDefinitions {
 
     }
 
-    @When("^the user select the module bolsos-bomboneras$")
-    public void theUserSelectTheNmoduleBolsosBomboneras() {
+    @When("^the user select the module shoes_tenis$")
+    public void theUserSelectTheModuleShoes_Tenis() {
     OnStage.theActorInTheSpotlight().wasAbleTo(ShoesBuyTasks.shoesBuyTasks());
     }
 
@@ -37,13 +38,14 @@ public class ShoesStepsDefinitions {
         }
     }
     //----------------------------------------------------------------------------------------------------------------------------------
-    @When("^the user select the module bolsos-bomboneras and select")
-    public void theUserSelectTheModuleBolsosBombonerasAndSelect() {
+    @When("^the user select the module shoes-tenis and selecte option list_wish$")
+    public void theUserSelectTheModuleShoesTenisAndSelecteOptionList_wish() {
     OnStage.theActorInTheSpotlight().wasAbleTo(ShoesAgregateTasks.shoesAgregateTasks());
     }
 
-    @Then("^the user will see the product in the module")
-    public void theUserWillSeeTheProductInTheModule() {
+    @Then("^the will veryfy that the shoes,that is in the my account module-wish list$")
+    public void theWillVeryfyThatTheShoesThatIsInTheMyAccountModuleWishList() {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBag.verifyBag(),Matchers.is("Añadir al carrito")));
 
     }
 }

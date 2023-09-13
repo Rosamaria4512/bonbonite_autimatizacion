@@ -15,6 +15,10 @@ public class ShoesAgregateTasks implements Task {
         actor.attemptsTo(Click.on(ShoesPage.OP_TALLA));
         actor.attemptsTo(Click.on(ShoesPage.SLT_TALLA));
         actor.attemptsTo(Click.on(ShoesPage.A_AGREGATE_LIST));
+        actor.attemptsTo(Click.on(ShoesPage.BAR_MENU));
+        actor.attemptsTo(Click.on(ShoesPage.A_MICUENTA));
+        actor.attemptsTo(Click.on(ShoesPage.A_LISTADE_DESEOS));
+        actor.attemptsTo(Click.on(ShoesPage.VERF_PRODUCTO));
 
     }
     public static ShoesAgregateTasks shoesAgregateTasks(){
