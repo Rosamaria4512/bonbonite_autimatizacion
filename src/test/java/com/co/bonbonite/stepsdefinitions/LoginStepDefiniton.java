@@ -30,7 +30,9 @@ public class LoginStepDefiniton {
 
     }
 
-    @Then("^he user enter credentials in the website$")
+
+
+    @When("^he user enter credentials in the website$")
     public void heUserEnterCredentialsInTheWebsite(List<LoginDataModels>loginDataModelsList) {
         LoginDataModels loginDataModels;
         loginDataModels=loginDataModelsList.get(0);
@@ -39,7 +41,7 @@ public class LoginStepDefiniton {
     }
 
 
-    @When("^he user successfully logged$")
+    @Then("^he user successfully logged$")
     public void heUserSuccessfullyLogged() {
 
     }
