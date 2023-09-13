@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Question;
 public class VerifyLoginIconrrectly implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
-        return LoginINcorrectlyPage.TXT_CEDULA.resolveFor(actor).getAttribute("valur").contains("10618117145");
+        return LoginINcorrectlyPage.TXT_CEDULA.resolveFor(actor).getAttribute("value").contains("10618117145");
 
     }
 
