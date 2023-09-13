@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 01:25</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 08:48</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Agregate a product a list_wish
+                                <span class="error-color">Agregate a product a list_wish
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -192,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element (a role='button' tabindex='0' name='aadir-a-la-lista-de-deseos' aria-label='A&ntilde;adir a la lista de deseos' class='tinvwl_add_to_wishlist_button tinvwl-icon-heart tinvwl-position-after' data-tinv-wl-list='[]' data-tinv-wl-product='267042' data-tinv-wl-productvariation='267048' data-tinv-wl-productvariations='[]' data-tinv-wl-producttype='variable' data-tinv-wl-action='addto')...(/a) is not clickable at point (981, 553). Other element would receive the click: (div class='message_bar')...(/div)</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -208,20 +208,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.co.bonbonite.tasks.ShoesAgregateTasks.performAs(ShoesAgregateTasks.java:18)<br />com.co.bonbonite.stepsdefinitions.ShoesStepsDefinitions.theUserSelectTheModuleShoesTenisAndSelecteOptionList_wish(ShoesStepsDefinitions.java:43)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>com.co.bonbonite.tasks.ShoesAgregateTasks.performAs(ShoesAgregateTasks.java:17)<br />com.co.bonbonite.stepsdefinitions.ShoesStepsDefinitions.theUserSelectTheModuleShoesTenisAndSelecteOptionList_wish(ShoesStepsDefinitions.java:43)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //div[@id=burger] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>com.co.bonbonite.tasks.ShoesAgregateTasks.performAs(ShoesAgregateTasks.java :18)<br />com.co.bonbonite.stepsdefinitions.ShoesStepsDefinitions.theUserSelectTheModuleShoesTenisAndSelecteOptionList_wish(ShoesStepsDefinitions.java :43)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,30 +222,27 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource2991219495980177504.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource4953462706203135670.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="083b7acfda19a7aefda6dae328cc89658cf91034b09975c41a7eeb1a26ec24bc.png" title=" Given he user enter the website" width="1366"/>
-                <img src="083b7acfda19a7aefda6dae328cc89658cf91034b09975c41a7eeb1a26ec24bc.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1366"/>
-                <img src="083b7acfda19a7aefda6dae328cc89658cf91034b09975c41a7eeb1a26ec24bc.png" title=" Given he user enter the website (completed)" width="1366"/>
-                <img src="0058250859f6a092f0c1ee3278effabc9dd7167ca951a1f651781f17ebfe5d10.png" title=" When the user select the module shoes-tenis and selecte option list_wish" width="1366"/>
-                <img src="0058250859f6a092f0c1ee3278effabc9dd7167ca951a1f651781f17ebfe5d10.png" title=" Rosa shoes agregate tasks" width="1366"/>
-                <img src="0058250859f6a092f0c1ee3278effabc9dd7167ca951a1f651781f17ebfe5d10.png" title=" Rosa clicks on Ver zapatos" width="1366"/>
-                <img src="fa5ec1feb982d2a2f96ce1de74f63a849f35a1c643b2a997b3d027a7d2b7ce21.png" title=" Rosa clicks on Ver zapatos (completed)" width="1366"/>
-                <img src="fa5ec1feb982d2a2f96ce1de74f63a849f35a1c643b2a997b3d027a7d2b7ce21.png" title=" Rosa clicks on Seleccionar tipo zapato" width="1366"/>
-                <img src="01f8c9c4100f4625885ecd281d5aedd4f59b800f8f05ab03c09ab6451d47a5dc.png" title=" Rosa clicks on Seleccionar tipo zapato (completed)" width="1366"/>
-                <img src="01f8c9c4100f4625885ecd281d5aedd4f59b800f8f05ab03c09ab6451d47a5dc.png" title=" Rosa clicks on Seleccionar zapato img" width="1366"/>
-                <img src="3a6a0c2cbb7644bae7634a6f0bd074dacca71577fef5475e9643298959760d9c.png" title=" Rosa clicks on Seleccionar zapato img (completed)" width="1366"/>
-                <img src="7e828adcaff457ff1e9018e8e7ca31d368060a859634200d8fc9b2dbdd0fe0f9.png" title=" Rosa clicks on seleccionar talla" width="1366"/>
-                <img src="85ba9df26ee27895fbfda361df63643d5b27b1bcd2566de917e11a5169d6cf3c.png" title=" Rosa clicks on seleccionar talla (completed)" width="1366"/>
-                <img src="85ba9df26ee27895fbfda361df63643d5b27b1bcd2566de917e11a5169d6cf3c.png" title=" Rosa clicks on boton seleccionar talla" width="1366"/>
-                <img src="e8c47f46ab46f18f2e84b9e8dac1a0479b7a99a32e17edfa53cead7c47ea832c.png" title=" Rosa clicks on boton seleccionar talla (completed)" width="1366"/>
-                <img src="e8c47f46ab46f18f2e84b9e8dac1a0479b7a99a32e17edfa53cead7c47ea832c.png" title=" Rosa clicks on opcion para agregar productos alista de favoritos" width="1366"/>
-                <img src="a292170104a286daf33540beb2aa7ccc9ac8596acdc7114c34445ebd0e49bb17.png" title=" Rosa clicks on opcion para agregar productos alista de favoritos (completed)" width="1366"/>
-                <img src="a292170104a286daf33540beb2aa7ccc9ac8596acdc7114c34445ebd0e49bb17.png" title=" Rosa clicks on opcion para ver opciones" width="1366"/>
-                <img src="c8651ef0f748439633823a6efa8535ffef37a7fc5e635ee5625efbfbf56cd492.png" title=" Rosa clicks on opcion para ver opciones (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="e887383c1a977e2682ac35c40fb0cd3db94b8149f52431d5a454e40c16a10bb2.png" title=" Given he user enter the website" width="1920"/>
+                <img src="e887383c1a977e2682ac35c40fb0cd3db94b8149f52431d5a454e40c16a10bb2.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
+                <img src="e887383c1a977e2682ac35c40fb0cd3db94b8149f52431d5a454e40c16a10bb2.png" title=" Given he user enter the website (completed)" width="1920"/>
+                <img src="e887383c1a977e2682ac35c40fb0cd3db94b8149f52431d5a454e40c16a10bb2.png" title=" When the user select the module shoes-tenis and selecte option list_wish" width="1920"/>
+                <img src="e887383c1a977e2682ac35c40fb0cd3db94b8149f52431d5a454e40c16a10bb2.png" title=" Rosa shoes agregate tasks" width="1920"/>
+                <img src="3f2622158aacbc49a69e1bef5e30df317c2b5a23acd968c01fb476847888e92a.png" title=" Rosa clicks on Ver zapatos" width="1920"/>
+                <img src="3f2622158aacbc49a69e1bef5e30df317c2b5a23acd968c01fb476847888e92a.png" title=" Rosa clicks on Seleccionar tipo zapato" width="1920"/>
+                <img src="d9b3c6bb0c9b3a1ffc33b21c98f98839a575a4751d45da9ecadc934ba7da9b4a.png" title=" Rosa clicks on Seleccionar tipo zapato (completed)" width="1920"/>
+                <img src="d9b3c6bb0c9b3a1ffc33b21c98f98839a575a4751d45da9ecadc934ba7da9b4a.png" title=" Rosa clicks on Seleccionar zapato img" width="1920"/>
+                <img src="cab5347f9db66ba071433fd154a4e87536f27cfef3632fc94d8cf5f39e84ccc2.png" title=" Rosa clicks on Seleccionar zapato img (completed)" width="1920"/>
+                <img src="cab5347f9db66ba071433fd154a4e87536f27cfef3632fc94d8cf5f39e84ccc2.png" title=" Rosa clicks on seleccionar talla" width="1920"/>
+                <img src="24dae72ccbe6c2ea9fcf7e318653f234e83fa57c48f855f1b8aa19aa95d43a29.png" title=" Rosa clicks on seleccionar talla (completed)" width="1920"/>
+                <img src="24dae72ccbe6c2ea9fcf7e318653f234e83fa57c48f855f1b8aa19aa95d43a29.png" title=" Rosa clicks on boton seleccionar talla" width="1920"/>
+                <img src="e788cbe07f2b6d9921737655cd7f440836c18af105b8355071327bbe7f506eb7.png" title=" Rosa clicks on boton seleccionar talla (completed)" width="1920"/>
+                <img src="e788cbe07f2b6d9921737655cd7f440836c18af105b8355071327bbe7f506eb7.png" title=" Rosa clicks on opcion para agregar productos alista de favoritos" width="1920"/>
+                <img src="e788cbe07f2b6d9921737655cd7f440836c18af105b8355071327bbe7f506eb7.png" title=" Rosa clicks on opcion para agregar productos alista de favoritos (completed): <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

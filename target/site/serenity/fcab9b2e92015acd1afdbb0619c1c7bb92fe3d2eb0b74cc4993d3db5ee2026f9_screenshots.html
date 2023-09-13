@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-09-2023 23:38</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 08:46</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Aggregate of Bag Successfull
+                                <span class="error-color">Aggregate of Bag Successfull
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -192,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element is not clickable at point (-2, 356)</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -208,20 +208,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.co.bonbonite.tasks.BagAgregateTask.performAs(BagAgregateTask.java:14)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectsAProductInTheWalletsModuleAndSelectsTheAddToWishList(BagStepsDefinitions.java:31)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>com.co.bonbonite.tasks.BagAgregateTask.performAs(BagAgregateTask.java:13)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectsAProductInTheWalletsModuleAndSelectsTheAddToWishList(BagStepsDefinitions.java:31)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //a[@href=&quot;https://www.bon-bonite.com/mi-cuenta/lista_deseos/&quot;] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>com.co.bonbonite.tasks.BagAgregateTask.performAs(BagAgregateTask.java :14)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectsAProductInTheWalletsModuleAndSelectsTheAddToWishList(BagStepsDefinitions.java :31)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,22 +222,19 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource8409765028369497765.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource3695463164283150902.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="70c8707a00c9d444357cba1dfcdcd212c700bd11c9a94530a27756be0a59d24a.png" title=" Given he user enter the website" width="1366"/>
-                <img src="70c8707a00c9d444357cba1dfcdcd212c700bd11c9a94530a27756be0a59d24a.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1366"/>
-                <img src="70c8707a00c9d444357cba1dfcdcd212c700bd11c9a94530a27756be0a59d24a.png" title=" Given he user enter the website (completed)" width="1366"/>
-                <img src="70c8707a00c9d444357cba1dfcdcd212c700bd11c9a94530a27756be0a59d24a.png" title=" When the user selects a product in the Wallets module, and selects the add to wish list" width="1366"/>
-                <img src="f99ede8c2db248e84e69d91d01b2556564a9ef3fd7dc505a03e159855542a44a.png" title=" Rosa bag agregate task" width="1366"/>
-                <img src="f99ede8c2db248e84e69d91d01b2556564a9ef3fd7dc505a03e159855542a44a.png" title=" Rosa clicks on menu desplegable" width="1366"/>
-                <img src="d070a4acdda6c5970f079d3544932140c8e050531a69d93bf65a53cd593a3664.png" title=" Rosa clicks on menu desplegable (completed)" width="1366"/>
-                <img src="d070a4acdda6c5970f079d3544932140c8e050531a69d93bf65a53cd593a3664.png" title=" Rosa clicks on opcion del menu burger" width="1366"/>
-                <img src="765b881c20a4a65ed55b21b54fe0b3d0e69b727ee3ec49f967d809b54a5353c7.png" title=" Rosa clicks on opcion del menu burger (completed)" width="1366"/>
-                <img src="765b881c20a4a65ed55b21b54fe0b3d0e69b727ee3ec49f967d809b54a5353c7.png" title=" Rosa clicks on ir a lista de deseos" width="1366"/>
-                <img src="fc746132d7c877b4f9e5c6151f370c23717df364db500a9e5078127a30b10bb6.png" title=" Rosa clicks on ir a lista de deseos (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+                <img src="e85680bba768243f08be96415523548915ac604106dc15caf6b5e9aaca67eab0.png" title=" Given he user enter the website" width="1920"/>
+                <img src="e85680bba768243f08be96415523548915ac604106dc15caf6b5e9aaca67eab0.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
+                <img src="e85680bba768243f08be96415523548915ac604106dc15caf6b5e9aaca67eab0.png" title=" Given he user enter the website (completed)" width="1920"/>
+                <img src="e85680bba768243f08be96415523548915ac604106dc15caf6b5e9aaca67eab0.png" title=" When the user selects a product in the Wallets module, and selects the add to wish list" width="1920"/>
+                <img src="e85680bba768243f08be96415523548915ac604106dc15caf6b5e9aaca67eab0.png" title=" Rosa bag agregate task" width="1920"/>
+                <img src="1de1b78c487ed25565f1310eaed8805aceb01cb705077445a45494a37df569cc.png" title=" Rosa clicks on menu desplegable" width="1920"/>
+                <img src="1de1b78c487ed25565f1310eaed8805aceb01cb705077445a45494a37df569cc.png" title=" Rosa clicks on opcion del menu burger" width="1920"/>
+                <img src="6391c56babed34ac572e04916aa86140e7ee05c7adb17301dd59cbdde9914fce.png" title=" Rosa clicks on opcion del menu burger (completed): <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
