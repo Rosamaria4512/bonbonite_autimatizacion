@@ -17,10 +17,10 @@ public class ShoesTasks implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-      //  actor.attemptsTo(Click.on(ShoesPage.SVG_LOGIN));
-       // actor.attemptsTo(Enter.theValue(credentials.getUser()).into(ShoesPage.TXT_USER));
-        //actor.attemptsTo(Enter.theValue(credentials.getPass()).into(ShoesPage.TXT_PASS));
-      //  actor.attemptsTo(Click.on(ShoesPage.BTN_LOGIN));
+       actor.attemptsTo(Click.on(ShoesPage.SVG_LOGIN));
+        actor.attemptsTo(Enter.theValue(credentials.getUser()).into(ShoesPage.TXT_USER));
+        actor.attemptsTo(Enter.theValue(credentials.getPass()).into(ShoesPage.TXT_PASS));
+       actor.attemptsTo(Click.on(ShoesPage.BTN_LOGIN));
     }
     public static ShoesTasks shoesTasks(Credentials credentials){
         return Tasks.instrumented(ShoesTasks.class,credentials);

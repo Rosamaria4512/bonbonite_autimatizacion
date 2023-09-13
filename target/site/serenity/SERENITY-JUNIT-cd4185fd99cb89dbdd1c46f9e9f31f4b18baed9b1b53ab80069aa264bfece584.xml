@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login" skipped="0" tests="2" time="66.25" timestamp="2023-09-12 04:16:30"><testcase name="Login succesfully"/><testcase name="Incorrect Login"><error message="null" type="java.lang.AssertionError">null</error><system-err>null&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login" skipped="0" tests="2" time="47.83" timestamp="2023-09-13 09:54:55"><testcase name="Login succesfully"/><testcase name="Incorrect Login"><error message="null" type="java.lang.AssertionError">null</error><system-err>null&#13;
 com.co.bonbonite.stepsdefinitions.LoginIncorrectlyStepDefinition.heWillLogInIncorrectly(LoginIncorrectlyStepDefinition.java:51)&#13;
 ✽.he will log in incorrectly(src/test/resources/features/login.feature:16)&#13;
 </system-err></testcase></testsuite>
