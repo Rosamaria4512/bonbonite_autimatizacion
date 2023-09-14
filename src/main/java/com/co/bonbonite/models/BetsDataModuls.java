@@ -8,16 +8,20 @@ public class BetsDataModuls {
     private String lastname;
     private String identification;
     private String phone;
+    private String depto;
+    private String city;
     private String addrees;
     private String codigo;
 
-    public BetsDataModuls(String nameuser, String passworduser, String name, String lastname, String identification, String phone, String addrees, String codigo) {
+    public BetsDataModuls(String nameuser, String passworduser, String name, String lastname, String identification, String phone, String depto, String city, String addrees, String codigo) {
         this.nameuser = nameuser;
         this.passworduser = passworduser;
         this.name = name;
         this.lastname = lastname;
         this.identification = identification;
         this.phone = phone;
+        this.depto = depto;
+        this.city = city;
         this.addrees = addrees;
         this.codigo = codigo;
     }
@@ -68,6 +72,22 @@ public class BetsDataModuls {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getDepto() {
+        return depto;
+    }
+
+    public void setDepto(String depto) {
+        this.depto = depto;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getAddrees() {

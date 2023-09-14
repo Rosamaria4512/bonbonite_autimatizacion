@@ -58,7 +58,7 @@ public class BeltsTask implements Task {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        actor.attemptsTo(Scroll.to(BeltsPage.BTN_CS));
+        actor.attemptsTo(Scroll.to(BeltsPage.BTN_CS2));
         actor.attemptsTo(Click.on(BeltsPage.BTN_CONTINUED));
         try {
             Thread.sleep(2000);
@@ -73,14 +73,16 @@ public class BeltsTask implements Task {
         actor.attemptsTo(Click.on(BeltsPage.TXT_TYPEIDENTIFICATION));
         actor.attemptsTo(Enter.theValue(betsDataModuls.getIdentification()).into(BeltsPage.TXT_NUMBERID));
         actor.attemptsTo(Enter.theValue(betsDataModuls.getPhone()).into(BeltsPage.TXT_CELL));
-        actor.attemptsTo(Scroll.to(BeltsPage.TXT_PAIS));
+        actor.attemptsTo(Scroll.to(BeltsPage.TXT_CELL));
 
-        actor.attemptsTo(Click.on(BeltsPage.TXT_PAIS));
+       actor.attemptsTo(Click.on(BeltsPage.TXT_PAIS));
         actor.attemptsTo(Click.on(BeltsPage.TXT_PAIS1));
-        actor.attemptsTo(Click.on(BeltsPage.TXT_DEP));
-        actor.attemptsTo(Click.on(BeltsPage.TXT_DEP1));
-        actor.attemptsTo(Click.on(BeltsPage.TXT_CITY));
-        actor.attemptsTo(Click.on(BeltsPage.TXT_CITY1));
+        actor.attemptsTo(Enter.theValue(betsDataModuls.getDepto()).into(BeltsPage.TXT_DEP));
+        actor.attemptsTo(Enter.theValue(betsDataModuls.getCity()).into(BeltsPage.TXT_CITY));
+       // actor.attemptsTo(Click.on(BeltsPage.TXT_DEP));
+       // actor.attemptsTo(Click.on(BeltsPage.TXT_DEP1));
+        //actor.attemptsTo(Click.on(BeltsPage.TXT_CITY));
+        //actor.attemptsTo(Click.on(BeltsPage.TXT_CITY1));
         actor.attemptsTo(Enter.theValue(betsDataModuls.getAddrees()).into(BeltsPage.TXT_ADDRESS));
         actor.attemptsTo(Enter.theValue(betsDataModuls.getCodigo()).into(BeltsPage.TXT_CODE));
         actor.attemptsTo(Click.on(BeltsPage.TXT_PAGAR));
