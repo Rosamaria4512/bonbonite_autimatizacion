@@ -16,7 +16,7 @@ Feature: Bag buy
   Scenario: Buy of Bag the Module "Mi carrito"
     Given he user enter the website
     When The user select a product in the Wallets module carrito and complete the forms for facturation
-      | Nombres         | Apellidos | N_DOCUMENTO | EMAIL              | TELEFONO    | DIRECCION | CODIGO_POSTAL |
-      | Cristian Camilo | Ruano     | 123456789   | camilo90@gmail.com | 09787654321 | Cra 3#42  | fr4frw3444555 |
+      | name            | surname | n_documento | email              | phone       | adrres   | code_zip      |
+      | Cristian Camilo | Ruano   | 123456789   | camilo90@gmail.com | 09787654321 | Cra 3#42 | fr4frw3444555 |
     Then the user would have bought a bag
 

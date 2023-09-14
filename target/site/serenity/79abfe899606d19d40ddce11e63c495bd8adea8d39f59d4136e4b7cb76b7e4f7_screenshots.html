@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 15:27</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 16:00</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Buy of Bag the Module &quot;Mi carrito&quot;
+                                <span class="failing-color">Buy of Bag the Module &quot;Mi carrito&quot;
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -192,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Cucumber exception: No such field com.co.bonbonite.models.Facturation.nombres</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -208,13 +208,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>cucumber.runtime.CucumberException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>com.co.bonbonite.tasks.FacturationBag.performAs(FacturationBag.java:21)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(BagStepsDefinitions.java:56)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //a[@class='checkout-button button alt wc-forward'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>com.co.bonbonite.tasks.FacturationBag.performAs(FacturationBag.java :21)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(BagStepsDefinitions.java :56)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -222,17 +229,19 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource2517593465175289018.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource5672447421442012870.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a07466af5d768a67f87471f8ff35a8da718c476ba645e295d33665d70b98c98e.png" title=" Given he user enter the website" width="1920"/>
-                <img src="a07466af5d768a67f87471f8ff35a8da718c476ba645e295d33665d70b98c98e.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
-                <img src="a07466af5d768a67f87471f8ff35a8da718c476ba645e295d33665d70b98c98e.png" title=" Given he user enter the website (completed)" width="1920"/>
-                <img src="a07466af5d768a67f87471f8ff35a8da718c476ba645e295d33665d70b98c98e.png" title=" When The user select a product in the Wallets module carrito and complete the forms for facturation
-| nombres | Apellidos | N_DOCUMENTO | EMAIL | TELEFONO | DIRECCION | CODIGO_POSTAL |
-| Cristian Camio | Ruano | 123456789 | camilo90@gamil.com | 09787654321 | Cra 3#42 | fr4frw3444555 |: <span class='error-color'>ERROR</span>" width="1920"/>
+                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Given he user enter the website" width="1920"/>
+                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
+                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Given he user enter the website (completed)" width="1920"/>
+                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" When The user select a product in the Wallets module carrito and complete the forms for facturation
+| name | surname | n_documento | email | phone | adrres | code_zip |
+| Cristian Camilo | Ruano | 123456789 | camilo90@gmail.com | 09787654321 | Cra 3#42 | fr4frw3444555 |" width="1920"/>
+                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Rosa facturation bag" width="1920"/>
+                <img src="cbf959db600fceb186c85e2fef5e60f95fcc6e686a8686363d31b333fe547f1b.png" title=" Rosa clicks on finalizar compra: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

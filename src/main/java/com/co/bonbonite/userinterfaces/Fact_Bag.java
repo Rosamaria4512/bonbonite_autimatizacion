@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class Fact_Bag  {
-   public static final Target BTN_FINALIZAR_COMPRA =Target.the("finalizar compra").locatedBy("(//a[@href='https://www.bon-bonite.com/finalizar-compra/'])[2]");
+   public static final Target BTN_FINALIZAR_COMPRA =Target.the("finalizar compra").locatedBy("//a[@class='checkout-button button alt wc-forward']");
    public static final Target BTN_CONTINUAR_COMPRA =Target.the("continuar compra").locatedBy("//button[@class='resume-cta cta-step']");
    public static final Target TXT_NOMBRE =Target.the("escribir nombre").locatedBy("//input[@name='billing_first_name']");
    public static final Target TXT_APELLIDOS =Target.the("escribir apellidos").locatedBy("//input[@name='billing_last_name']");

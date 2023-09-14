@@ -1,77 +1,79 @@
 package com.co.bonbonite.models;
 
 public class Facturation {
-    private  String Nombres;
-    private  String Apellidos;
-    private  String N_DOCUMENTO;
-    private  String EMAIL;
-    private  String TELEFONO;
-    private  String DIRECCION;
-    private  String CODIGO_POSTAL;
+    private String name;
+    private String surname;
+    private String n_documento;
+    private String email;
+    private String phone;
+    private String adrres;
+    private String code_zip;
 
-    public Facturation(String nombres, String apellidos, String n_DOCUMENTO, String EMAIL, String TELEFONO, String DIRECCION, String CODIGO_POSTAL) {
-        this.Nombres = nombres;
-        this.Apellidos = apellidos;
-        this.N_DOCUMENTO = n_DOCUMENTO;
-        this.EMAIL = EMAIL;
-        this.TELEFONO = TELEFONO;
-        this.DIRECCION = DIRECCION;
-        this.CODIGO_POSTAL = CODIGO_POSTAL;
+    public Facturation(String name, String surname, String n_documento, String email, String phone, String adrres, String code_zip) {
+        this.name = name;
+        this.surname = surname;
+        this.n_documento = n_documento;
+        this.email = email;
+        this.phone = phone;
+        this.adrres = adrres;
+        this.code_zip = code_zip;
     }
 
-    public String getNombres() {
-        return Nombres;
+    public String getName() {
+        return name;
     }
 
-    public void setNombres(String nombres) {
-        Nombres = nombres;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getApellidos() {
-        return Apellidos;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setApellidos(String apellidos) {
-        Apellidos = apellidos;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getN_DOCUMENTO() {
-        return N_DOCUMENTO;
+    public String getN_documento() {
+        return n_documento;
     }
 
-    public void setN_DOCUMENTO(String n_DOCUMENTO) {
-        N_DOCUMENTO = n_DOCUMENTO;
+    public void setN_documento(String n_documento) {
+        this.n_documento = n_documento;
     }
 
-    public String getEMAIL() {
-        return EMAIL;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEMAIL(String EMAIL) {
-        this.EMAIL = EMAIL;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getTELEFONO() {
-        return TELEFONO;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTELEFONO(String TELEFONO) {
-        this.TELEFONO = TELEFONO;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getDIRECCION() {
-        return DIRECCION;
+    public String getAdrres() {
+        return adrres;
     }
 
-    public void setDIRECCION(String DIRECCION) {
-        this.DIRECCION = DIRECCION;
+    public void setAdrres(String adrres) {
+        this.adrres = adrres;
     }
 
-    public String getCODIGO_POSTAL() {
-        return CODIGO_POSTAL;
+    public String getCode_zip() {
+        return code_zip;
     }
 
-    public void setCODIGO_POSTAL(String CODIGO_POSTAL) {
-        this.CODIGO_POSTAL = CODIGO_POSTAL;
+    public void setCode_zip(String code_zip) {
+        this.code_zip = code_zip;
     }
 }
+
+
