@@ -56,10 +56,12 @@ public class BeltsPage {
 
     public static final Target TXT_CELL = Target.the("CAMPO PARA CELULAR")
             .locatedBy("//*[@id='billing_phone']");
-    public static final Target TXT_PAIS = Target.the("Localizador para poder hacer scroll")
-            .locatedBy("//*[@id='billing_country']");
-    public static final Target TXT_PAIS1 = Target.the("Localizador para poder hacer scroll")
-            .locatedBy("//*[@id='billing_country']/option[48]");
+    public static final Target TXT_PAIS = Target.the("seleccionar pais")
+            .locatedBy("//span[@id='select2-billing_country-container']");
+    public static final Target TXT_PAIS1 = Target.the("seleccionar pais colombia")
+            .locatedBy("//*[@id='select2-billing_country-container']");
+
+
     public static final Target TXT_DEP = Target.the("Localizador para poder hacer scroll")
             .locatedBy("//*[@id='billing_state']");
     public static final Target TXT_DEP1 = Target.the("Localizador para poder hacer scroll")
