@@ -1,1 +1,8 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login" skipped="0" tests="2" time="47.83" timestamp="2023-09-13 09:54:55"><testcase name="Login succesfully"/><testcase name="Incorrect Login"><error message="null" type="java.lang.AssertionError">null</error><system-err>null&#13;
+com.co.bonbonite.stepsdefinitions.LoginIncorrectlyStepDefinition.heWillLogInIncorrectly(LoginIncorrectlyStepDefinition.java:51)&#13;
+✽.he will log in incorrectly(src/test/resources/features/login.feature:16)&#13;
+</system-err></testcase></testsuite>
+=======
 <?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="2" time="64.92" timestamp="2023-09-13 08:42:44"><testcase name="Login succesfully"/><testcase name="Incorrect Login"/></testsuite>
+>>>>>>> ecea75360c80564cca7eaee94c7b9fdb49393b24
