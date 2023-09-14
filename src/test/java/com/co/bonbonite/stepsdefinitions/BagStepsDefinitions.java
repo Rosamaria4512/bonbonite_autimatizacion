@@ -4,6 +4,7 @@ import com.co.bonbonite.models.Credentials;
 import com.co.bonbonite.models.Facturation;
 import com.co.bonbonite.questions.VerifyBag;
 import com.co.bonbonite.questions.VerifyBuy;
+import com.co.bonbonite.questions.VerifyBuyBag;
 import com.co.bonbonite.tasks.*;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -53,11 +54,12 @@ public class BagStepsDefinitions {
     public void theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(List<Facturation>facturationList) {
         Facturation facturation;
         facturation=facturationList.get(0);
+        OnStage.theActorInTheSpotlight().wasAbleTo(BagsBuy.bagsBuy());
         OnStage.theActorInTheSpotlight().wasAbleTo(FacturationBag.facturationBag(facturation));
     }
 
     @Then("^the user would have bought a bag$")
     public void theUserWouldHaveBoughtABag() {
-
+    OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBuyBag.verifyBuyBag(),Matchers.is("BON-BONITE")));
     }
 }

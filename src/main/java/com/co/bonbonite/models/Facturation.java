@@ -1,6 +1,8 @@
 package com.co.bonbonite.models;
 
 public class Facturation {
+    private String id;
+    private String pass;
     private String name;
     private String surname;
     private String n_documento;
@@ -9,7 +11,9 @@ public class Facturation {
     private String adrres;
     private String code_zip;
 
-    public Facturation(String name, String surname, String n_documento, String email, String phone, String adrres, String code_zip) {
+    public Facturation(String id, String pass, String name, String surname, String n_documento, String email, String phone, String adrres, String code_zip) {
+        this.id = id;
+        this.pass = pass;
         this.name = name;
         this.surname = surname;
         this.n_documento = n_documento;
@@ -17,6 +21,22 @@ public class Facturation {
         this.phone = phone;
         this.adrres = adrres;
         this.code_zip = code_zip;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
     }
 
     public String getName() {

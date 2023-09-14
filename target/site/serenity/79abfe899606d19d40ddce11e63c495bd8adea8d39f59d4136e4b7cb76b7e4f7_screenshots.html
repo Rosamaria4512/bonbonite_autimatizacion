@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-09-2023 16:00</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 14-09-2023 16:31</span>
     <br style="clear:left"/>
 </div>
 
@@ -167,9 +167,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Buy of Bag the Module &quot;Mi carrito&quot;
+                                <span class="error-color">Buy of Bag the Module &quot;Mi carrito&quot;
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -192,7 +192,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element (input id='ship-to-different-address-checkbox' class='woocommerce-form__input woocommerce-form__input-checkbox input-checkbox' type='checkbox' name='ship_to_different_address' value='1') is not clickable at point (497, 912). Other element would receive the click: (div class='message_bar')...(/div)</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -208,20 +208,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.co.bonbonite.tasks.FacturationBag.performAs(FacturationBag.java:21)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(BagStepsDefinitions.java:56)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>com.co.bonbonite.tasks.FacturationBag.performAs(FacturationBag.java:94)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(BagStepsDefinitions.java:58)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //a[@class='checkout-button button alt wc-forward'] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>com.co.bonbonite.tasks.FacturationBag.performAs(FacturationBag.java :21)<br />com.co.bonbonite.stepsdefinitions.BagStepsDefinitions.theUserSelectAProductInTheWalletsModuleCarritoAndCompleteTheFormsForFacturation(BagStepsDefinitions.java :56)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -229,19 +222,70 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource5672447421442012870.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource4955011295067766555.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Given he user enter the website" width="1920"/>
-                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
-                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Given he user enter the website (completed)" width="1920"/>
-                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" When The user select a product in the Wallets module carrito and complete the forms for facturation
+                <img src="2f30eb12c8da3026fbae870106c33b21e76a93f382e9b56ea195702128d8306d.png" title=" Given he user enter the website" width="1920"/>
+                <img src="2f30eb12c8da3026fbae870106c33b21e76a93f382e9b56ea195702128d8306d.png" title=" Rosa opens the https://www.bon-bonite.com/" width="1920"/>
+                <img src="2f30eb12c8da3026fbae870106c33b21e76a93f382e9b56ea195702128d8306d.png" title=" Given he user enter the website (completed)" width="1920"/>
+                <img src="2f30eb12c8da3026fbae870106c33b21e76a93f382e9b56ea195702128d8306d.png" title=" When The user select a product in the Wallets module carrito and complete the forms for facturation
 | name | surname | n_documento | email | phone | adrres | code_zip |
 | Cristian Camilo | Ruano | 123456789 | camilo90@gmail.com | 09787654321 | Cra 3#42 | fr4frw3444555 |" width="1920"/>
-                <img src="fff6d484be24218fc433f049eeac87708d114982a9b28f15a9301bad8e3c7d96.png" title=" Rosa facturation bag" width="1920"/>
-                <img src="cbf959db600fceb186c85e2fef5e60f95fcc6e686a8686363d31b333fe547f1b.png" title=" Rosa clicks on finalizar compra: <span class='failing-color'>FAILURE</span>" width="1920"/>
+                <img src="c8ab47df3e1e8f39c53cd0d8b6d796daea2088c25938322d7dc0d52360e283eb.png" title=" Rosa bags buy" width="1920"/>
+                <img src="c8ab47df3e1e8f39c53cd0d8b6d796daea2088c25938322d7dc0d52360e283eb.png" title=" Rosa clicks on ir al modulo de bolsos" width="1920"/>
+                <img src="226da2645102fbf922012a8f3a440901e3242ce88900debdc13e14b6fbf640f1.png" title=" Rosa clicks on ir al modulo de bolsos (completed)" width="1920"/>
+                <img src="226da2645102fbf922012a8f3a440901e3242ce88900debdc13e14b6fbf640f1.png" title=" Rosa clicks on ir al tipos de bolsos" width="1920"/>
+                <img src="287a67954d6e571893f924086855acb4afb3a91b6ae69ca43a12ab96160a047b.png" title=" Rosa clicks on ir al tipos de bolsos (completed)" width="1920"/>
+                <img src="287a67954d6e571893f924086855acb4afb3a91b6ae69ca43a12ab96160a047b.png" title=" Rosa clicks on seleccionar bolsos" width="1920"/>
+                <img src="9d6959180b2d726ad754ca7bbe8f506292c99cafb3ac384e2c242e5ffc168492.png" title=" Rosa clicks on seleccionar bolsos (completed)" width="1920"/>
+                <img src="9d6959180b2d726ad754ca7bbe8f506292c99cafb3ac384e2c242e5ffc168492.png" title=" Rosa clicks on comprar bolsos" width="1920"/>
+                <img src="3976fa5f0761e550ee3189ea4f07429a28138d5e67bdf5b65bdc3a1d99496492.png" title=" Rosa clicks on comprar bolsos (completed)" width="1920"/>
+                <img src="22f8092ff714a01faaefa1773cdd199b476ea0b721d561694db1d02232357002.png" title=" Rosa bags buy (completed)" width="1920"/>
+                <img src="22f8092ff714a01faaefa1773cdd199b476ea0b721d561694db1d02232357002.png" title=" Rosa facturation bag" width="1920"/>
+                <img src="22f8092ff714a01faaefa1773cdd199b476ea0b721d561694db1d02232357002.png" title=" Rosa clicks on finalizar compra" width="1920"/>
+                <img src="12cdd6475cb32c4b1719df48957452a61369eba12f10045cd09fb9d0af66ba6f.png" title=" Rosa clicks on finalizar compra (completed)" width="1920"/>
+                <img src="f2cfc244923856c25bf340e7340a8683255b601adb96846e0ba9a9bdf5f6d15c.png" title=" Rosa clicks on continuar compra" width="1920"/>
+                <img src="a2caf9a1e5c01418d01d8a0d7614533cba4c81d0a7ccfabeecb0763a2e40c41a.png" title=" Rosa clicks on continuar compra (completed)" width="1920"/>
+                <img src="47e71773d46d999260466fd7290b422559354ce4a9d41cc03396e107c8225dd8.png" title=" Rosa clicks on escribir nombre" width="1920"/>
+                <img src="2c7492c6dd4cf08a825443c15cb0e1ea45e55b704510ba6df8e13474ad19995c.png" title=" Rosa clicks on escribir nombre (completed)" width="1920"/>
+                <img src="2c7492c6dd4cf08a825443c15cb0e1ea45e55b704510ba6df8e13474ad19995c.png" title=" Rosa enters 'Cristian Camilo' into escribir nombre" width="1920"/>
+                <img src="fd3a9fa97f2fcc98b389f4fbf12d9aab6b965f47b79b1bbe0dbc596f8f0c9651.png" title=" Rosa enters 'Cristian Camilo' into escribir nombre (completed)" width="1920"/>
+                <img src="fd3a9fa97f2fcc98b389f4fbf12d9aab6b965f47b79b1bbe0dbc596f8f0c9651.png" title=" Rosa enters 'Ruano' into escribir apellidos" width="1920"/>
+                <img src="2ae23c4e42bb35b420e1c736ba6b9692a82b86a54f8374fa5ea21c19c00717d7.png" title=" Rosa enters 'Ruano' into escribir apellidos (completed)" width="1920"/>
+                <img src="2ae23c4e42bb35b420e1c736ba6b9692a82b86a54f8374fa5ea21c19c00717d7.png" title=" Rosa clicks on escribir apellidos" width="1920"/>
+                <img src="660c979d2e72e86a2d99046c0df018ee0b0f11ce312df7b86dbefe40d7c00b00.png" title=" Rosa clicks on escribir apellidos (completed)" width="1920"/>
+                <img src="660c979d2e72e86a2d99046c0df018ee0b0f11ce312df7b86dbefe40d7c00b00.png" title=" Rosa clicks on seleccionar sexo" width="1920"/>
+                <img src="660c979d2e72e86a2d99046c0df018ee0b0f11ce312df7b86dbefe40d7c00b00.png" title=" Rosa clicks on seleccionar sexo (completed)" width="1920"/>
+                <img src="660c979d2e72e86a2d99046c0df018ee0b0f11ce312df7b86dbefe40d7c00b00.png" title=" Rosa clicks on seleccionar sexo" width="1920"/>
+                <img src="9c674e0b6305b040fd8cdac2ac9bd4a9d669f6ad4a2a6ec9d705ea3847562345.png" title=" Rosa clicks on seleccionar sexo (completed)" width="1920"/>
+                <img src="9c674e0b6305b040fd8cdac2ac9bd4a9d669f6ad4a2a6ec9d705ea3847562345.png" title=" Rosa clicks on seleccionar sexo" width="1920"/>
+                <img src="9c674e0b6305b040fd8cdac2ac9bd4a9d669f6ad4a2a6ec9d705ea3847562345.png" title=" Rosa clicks on seleccionar sexo (completed)" width="1920"/>
+                <img src="9c674e0b6305b040fd8cdac2ac9bd4a9d669f6ad4a2a6ec9d705ea3847562345.png" title=" Rosa enters '123456789' into seleccionar sexo" width="1920"/>
+                <img src="7840f396693246ec5d17f027b880b0cd3ada54ac080dca8d001e3c747e4a03f2.png" title=" Rosa enters '123456789' into seleccionar sexo (completed)" width="1920"/>
+                <img src="68c58ca88d7fd71ccbea682040aa79af6aa22fe777e867c49c127d58a4a3d592.png" title=" Rosa enters 'camilo90@gmail.com' into seleccionar sexo" width="1920"/>
+                <img src="da49d7030d2aac84cd9643557ff53014cc0d21f638ccb5675587aceb6c164c4f.png" title=" Rosa enters 'camilo90@gmail.com' into seleccionar sexo (completed)" width="1920"/>
+                <img src="da49d7030d2aac84cd9643557ff53014cc0d21f638ccb5675587aceb6c164c4f.png" title=" Rosa enters '09787654321' into seleccionar sexo" width="1920"/>
+                <img src="cc1c825f1084a3187175b87154c5106caf377e20081f86287946da99273e07e1.png" title=" Rosa enters '09787654321' into seleccionar sexo (completed)" width="1920"/>
+                <img src="cc1c825f1084a3187175b87154c5106caf377e20081f86287946da99273e07e1.png" title=" Rosa clicks on seleccionar pais" width="1920"/>
+                <img src="91210fa26505194c07c320bc33ee4d39aa5e50c5e6a6075c9010ba7b7131b787.png" title=" Rosa clicks on seleccionar pais (completed)" width="1920"/>
+                <img src="91210fa26505194c07c320bc33ee4d39aa5e50c5e6a6075c9010ba7b7131b787.png" title=" Rosa clicks on op pais" width="1920"/>
+                <img src="91210fa26505194c07c320bc33ee4d39aa5e50c5e6a6075c9010ba7b7131b787.png" title=" Rosa clicks on op pais (completed)" width="1920"/>
+                <img src="91210fa26505194c07c320bc33ee4d39aa5e50c5e6a6075c9010ba7b7131b787.png" title=" Rosa clicks on seleccionar departamento" width="1920"/>
+                <img src="5b74ce48c560ff34bb6aa9e37a8e1eaa22aa09323dcf88770bbf42f8fe6c77d0.png" title=" Rosa clicks on seleccionar departamento (completed)" width="1920"/>
+                <img src="77f2325c095d55ffa624e08d2a69a4a0a856883e480a9843a27f6c5c202c5112.png" title=" Rosa clicks on op departamento" width="1920"/>
+                <img src="65c1c62e5afa8f9221be64a6fb7c3f2d5c72cf3768c72fb6313c0aaa0b6da21d.png" title=" Rosa clicks on op departamento (completed)" width="1920"/>
+                <img src="65c1c62e5afa8f9221be64a6fb7c3f2d5c72cf3768c72fb6313c0aaa0b6da21d.png" title=" Rosa clicks on seleccionar city" width="1920"/>
+                <img src="5a21bc623192a24f1a34e8796df59b3a216c42a5092e240bc46d39a201942d8a.png" title=" Rosa clicks on seleccionar city (completed)" width="1920"/>
+                <img src="5a21bc623192a24f1a34e8796df59b3a216c42a5092e240bc46d39a201942d8a.png" title=" Rosa clicks on op city" width="1920"/>
+                <img src="b0f5ae89d2906e5ba16a28e2bf37d9cfb730a0ab409d0cb2a5de40a2b1700a80.png" title=" Rosa clicks on op city (completed)" width="1920"/>
+                <img src="b0f5ae89d2906e5ba16a28e2bf37d9cfb730a0ab409d0cb2a5de40a2b1700a80.png" title=" Rosa enters 'Cra 3#42' into escribir direccion" width="1920"/>
+                <img src="5fcfe85de0f0364d04d2ca22a507e058b693a72b37bdb20df8f77359bfe5d3cf.png" title=" Rosa enters 'Cra 3#42' into escribir direccion (completed)" width="1920"/>
+                <img src="5fcfe85de0f0364d04d2ca22a507e058b693a72b37bdb20df8f77359bfe5d3cf.png" title=" Rosa enters 'fr4frw3444555' into escribir direccion" width="1920"/>
+                <img src="9aaf8c1b1cb2e91f01f486545c384ef8ee2119fc3d3a36835fc12744b092c45c.png" title=" Rosa enters 'fr4frw3444555' into escribir direccion (completed)" width="1920"/>
+                <img src="9aaf8c1b1cb2e91f01f486545c384ef8ee2119fc3d3a36835fc12744b092c45c.png" title=" Rosa clicks on autorizar 1" width="1920"/>
+                <img src="627665eeea11aa5bc666d4a21fbac173d41265963c6c8b40639bda653bf44a80.png" title=" Rosa clicks on autorizar 1 (completed): <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
