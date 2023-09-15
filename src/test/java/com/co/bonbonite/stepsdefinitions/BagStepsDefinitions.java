@@ -60,6 +60,25 @@ public class BagStepsDefinitions {
 
     @Then("^the user would have bought a bag$")
     public void theUserWouldHaveBoughtABag() {
-    OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBuyBag.verifyBuyBag(),Matchers.is("BON-BONITE")));
+    OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerifyBuyBag.verifyBuyBag(),Matchers.is("COP")));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+//--------------------------------------------------------------------------------------------------------------------------------
+    @When("^he user enter with his credential and select a product of mudule bolsos-bonboneras and complete de facturation$")
+    public void heUserEnterWithHisCredentialAndSelectAProductOfMuduleBolsosBonbonerasAndCompleteDeFacturation(List<Credentials>credentialsList) {
+    Credentials credentials;
+    credentials=credentialsList.get(0);
+    OnStage.theActorInTheSpotlight().attemptsTo(ShoesTasks.shoesTasks(credentials));
+    OnStage.theActorInTheSpotlight().attemptsTo(OpenCarrito.openCarrito());
+    }
+
+
+    @Then("^he user will see the price of his buy$")
+    public void heUserWillSeeThePriceOfHisBuy() {
+
     }
 }

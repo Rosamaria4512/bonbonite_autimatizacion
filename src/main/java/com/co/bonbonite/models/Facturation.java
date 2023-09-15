@@ -10,8 +10,10 @@ public class Facturation {
     private String phone;
     private String adrres;
     private String code_zip;
+    private String user;
+    private String password;
 
-    public Facturation(String id, String pass, String name, String surname, String n_documento, String email, String phone, String adrres, String code_zip) {
+    public Facturation(String id, String pass, String name, String surname, String n_documento, String email, String phone, String adrres, String code_zip, String user, String password) {
         this.id = id;
         this.pass = pass;
         this.name = name;
@@ -21,6 +23,8 @@ public class Facturation {
         this.phone = phone;
         this.adrres = adrres;
         this.code_zip = code_zip;
+        this.user = user;
+        this.password = password;
     }
 
     public String getId() {
@@ -94,6 +98,20 @@ public class Facturation {
     public void setCode_zip(String code_zip) {
         this.code_zip = code_zip;
     }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
-
-

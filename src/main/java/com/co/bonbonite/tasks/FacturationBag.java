@@ -21,13 +21,13 @@ public class FacturationBag implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(Fact_Bag.BTN_FINALIZAR_COMPRA));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         actor.attemptsTo(Click.on(Fact_Bag.BTN_CONTINUAR_COMPRA));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -42,15 +42,10 @@ public class FacturationBag implements Task {
         actor.attemptsTo(Enter.theValue(facturation.getName()).into(Fact_Bag.TXT_NOMBRE));
         actor.attemptsTo(Enter.theValue(facturation.getSurname()).into(Fact_Bag.TXT_APELLIDOS));
         actor.attemptsTo(Click.on(Fact_Bag.SLT_GENERO));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         actor.attemptsTo(Click.on(Fact_Bag.OP_GENERO));
         actor.attemptsTo(Click.on(Fact_Bag.SLT_ID));
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -60,7 +55,7 @@ public class FacturationBag implements Task {
         actor.attemptsTo(Enter.theValue(facturation.getPhone()).into(Fact_Bag.TXT_TELEFONO));
         actor.attemptsTo(Click.on(Fact_Bag.SLT_PAIS));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -84,17 +79,22 @@ public class FacturationBag implements Task {
         }
         actor.attemptsTo(Click.on(Fact_Bag.OP_CITY));
 
-        actor.attemptsTo(Enter.theValue(facturation.getAdrres()).into(Fact_Bag.TXT_DIRECCION));
-        actor.attemptsTo(Enter.theValue(facturation.getCode_zip()).into(Fact_Bag.TXT_CODE_ZIP),Scroll.to(Fact_Bag.TXT_CORREO));
+
+
+        actor.attemptsTo(Click.on(Fact_Bag.BTN_NEW_ACOUNT));
+        actor.attemptsTo(Enter.theValue(facturation.getUser()).into(Fact_Bag.TXT_USER));
+        actor.attemptsTo(Enter.theValue(facturation.getPassword()).into(Fact_Bag.TXT_PASS));
+        actor.attemptsTo(Enter.theValue(facturation.getCode_zip()).into(Fact_Bag.TXT_CODE_ZIP));
+        actor.attemptsTo(Enter.theValue(facturation.getAdrres()).into(Fact_Bag.TXT_DIRECCION),Scroll.to(Fact_Bag.TXT_NOMBRE));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         actor.attemptsTo(Click.on(Fact_Bag.CHK_1));
         actor.attemptsTo(Click.on(Fact_Bag.CHK_2));
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -104,6 +104,7 @@ public class FacturationBag implements Task {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
 
     }
     public static FacturationBag facturationBag(Facturation facturation){

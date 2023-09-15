@@ -40,12 +40,15 @@ public class Fact_Bag  {
 
    public static final Target TXT_DIRECCION =Target.the("escribir direccion").locatedBy("//input[@name='billing_address_1']");
    public static final Target TXT_CODE_ZIP =Target.the("escribir direccion").locatedBy("//input[@name='billing_postcode']");
-   public static final Target CHK_1 =Target.the("autorizar 1").locatedBy("(//input[@type='checkbox'])[3]");
-   public static final Target CHK_2 =Target.the("autorizar 1").locatedBy("(//input[@type='checkbox'])[4]");
-   public static final Target BTN_COMPAR =Target.the("REALIZAR COMPRA").locatedBy("//button[@class='button alt']");
+   public static final Target CHK_1 =Target.the("autorizar 1").locatedBy("//*[@id='newsletter_authorization']");
+   public static final Target CHK_2 =Target.the("autorizar 2").locatedBy("//*[@id='terms']");
+   public static final Target BTN_NEW_ACOUNT =Target.the("autorizar 1").locatedBy("//input[@name='createaccount']");
+   public static final Target TXT_USER =Target.the("Crear user").locatedBy("//input[@name='account_username']");
+   public static final Target TXT_PASS =Target.the("Crear pass").locatedBy("//input[@name='account_password']");
+   public static final Target BTN_COMPAR =Target.the("REALIZAR COMPRA").locatedBy("//*[@id='place_order']");
 
    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   public static final Target VALIDATE_COMPRA=Target.the("Validar compra").locatedBy("//strong[text()='BON-BONITE']");
+   public static final Target VALIDATE_COMPRA=Target.the("Validar compra").locatedBy("//*[text()='COP']");
 
 }
